@@ -20,17 +20,70 @@ const ProfilePage = () => {
 
   console.log(datasets);
 
+  
+  if (datasets.length < 16) {
+    return <div>Loading...</div>;
+  }
+
   return (
     <div className="flex items-center justify-center min-h-screen">
       <div className="flex gap-4">
-        <CustomDropdown name={"Strategis"} inheren={"Inheren"} kpmr={"KMPR"} linkInheren={datasets[0].link} linkKpmr={datasets[1].link}/>
-        <CustomDropdown name={"Strategis"} inheren={"Inheren"} kpmr={"KMPR"} linkInheren={datasets[2].link} linkKpmr={datasets[3].link}/>
-        <CustomDropdown name={"Strategis"} inheren={"Inheren"} kpmr={"KMPR"} linkInheren={datasets[4].link} linkKpmr={datasets[5].link}/>
-        <CustomDropdown name={"Strategis"} inheren={"Inheren"} kpmr={"KMPR"} linkInheren={datasets[6].link} linkKpmr={datasets[7].link}/>
-        <CustomDropdown name={"Strategis"} inheren={"Inheren"} kpmr={"KMPR"} linkInheren={datasets[8].link} linkKpmr={datasets[9].link}/>
-        <CustomDropdown name={"Strategis"} inheren={"Inheren"} kpmr={"KMPR"} linkInheren={datasets[10].link} linkKpmr={datasets[11].link}/>
-        <CustomDropdown name={"Strategis"} inheren={"Inheren"} kpmr={"KMPR"} linkInheren={datasets[12].link} linkKpmr={datasets[13].link}/>
-        <CustomDropdown name={"Strategis"} inheren={"Inheren"} kpmr={"KMPR"} linkInheren={datasets[14].link} linkKpmr={datasets[15].link}/>
+        <CustomDropdown
+          name={"Strategis"}
+          inheren={"Inheren"}
+          kpmr={"KMPR"}
+          linkInheren={datasets[0].link}
+          linkKpmr={datasets[1].link}
+        />
+        <CustomDropdown
+          name={"Strategis"}
+          inheren={"Inheren"}
+          kpmr={"KMPR"}
+          linkInheren={datasets[2].link}
+          linkKpmr={datasets[3].link}
+        />
+        <CustomDropdown
+          name={"Strategis"}
+          inheren={"Inheren"}
+          kpmr={"KMPR"}
+          linkInheren={datasets[4].link}
+          linkKpmr={datasets[5].link}
+        />
+        <CustomDropdown
+          name={"Strategis"}
+          inheren={"Inheren"}
+          kpmr={"KMPR"}
+          linkInheren={datasets[6].link}
+          linkKpmr={datasets[7].link}
+        />
+        <CustomDropdown
+          name={"Strategis"}
+          inheren={"Inheren"}
+          kpmr={"KMPR"}
+          linkInheren={datasets[8].link}
+          linkKpmr={datasets[9].link}
+        />
+        <CustomDropdown
+          name={"Strategis"}
+          inheren={"Inheren"}
+          kpmr={"KMPR"}
+          linkInheren={datasets[10].link}
+          linkKpmr={datasets[11].link}
+        />
+        <CustomDropdown
+          name={"Strategis"}
+          inheren={"Inheren"}
+          kpmr={"KMPR"}
+          linkInheren={datasets[12].link}
+          linkKpmr={datasets[13].link}
+        />
+        <CustomDropdown
+          name={"Strategis"}
+          inheren={"Inheren"}
+          kpmr={"KMPR"}
+          linkInheren={datasets[14].link}
+          linkKpmr={datasets[15].link}
+        />
       </div>
     </div>
   );
